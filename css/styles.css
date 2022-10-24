@@ -9,6 +9,7 @@
     --black-color: #000000;
     --opacity-color: rgba(255, 255, 255, 0.6);
     --active-color: #188CE8;
+    --icon-color: #AFB1B8;
 }
 
 body {
@@ -152,12 +153,38 @@ img {
     letter-spacing: 0.02em;
 }
 
+.icon-envelop {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 /* hero */
 .hero {
+
+    background-color: var(--bg-dark-color);
+}
+
+.overlay {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-color: var(--bg-dark-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+    background-position: center;
 }
 
 .hero-title {
@@ -213,6 +240,19 @@ img {
     text-transform: uppercase;
 }
 
+.thumb {
+    max-width: 270px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: var(--bg-middle-color);
+    border-radius: 4px;
+}
+
+.thumb-icon {
+    width: 70px;
+    height: 70px;
+}
+
 /* team */
 .team {
     background-color: var(--bg-middle-color);
@@ -241,7 +281,7 @@ img {
 
 }
 
-.team .list {
+.team .card {
     display: flex;
     gap: 30px;
 }
@@ -252,6 +292,69 @@ img {
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+
+
+/* network items*/
+
+.network-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.network {
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.network-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-color);
+}
+
+.network-icon:hover {
+    fill: var(--white-color);
+}
+
+.network:hover {
+    background-color: var(--accent-color);
+}
+
+/* client list */
+.item-color>.client-item {
+    color: var(--icon-color);
+
+}
+
+.client-list {
+    display: flex;
+    gap: 30px;
+
+
+}
+
+.client-item {
+    display: block;
+    width: 170px;
+    min-height: 92px;
+    border-radius: 4px;
+    border: 1px solid currentColor;
+    flex-basis: calc((100%-150px) / 6);
+}
+
+.client-icon {
+
+    fill: currentColor;
+}
+
+.client-item:hover {
+    color: var(--accent-color);
+
 }
 
 /* footer */

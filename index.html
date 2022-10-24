@@ -36,12 +36,20 @@
         </nav>
         <ul class="head-address list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="icon-envelop">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              @devstudio.com
+            </a>
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link">
+              <svg class="icon-smartphone">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -49,7 +57,7 @@
     <main>
       <!--герой-->
       <section class="hero">
-        <div class="container">
+        <div class="overlay">
           <h1 class="hero-title">
             Ефективні рішення для<br />
             вашого бізнесу
@@ -63,6 +71,11 @@
           <h2 class="hidden">Особливості</h2>
           <ul class="list">
             <li class="item">
+              <div class="thumb">
+                <svg class="thumb-icon">
+                  <use href="./images/icons.svg#antenna"></use>
+                </svg>
+              </div>
               <h3 class="title">Увага до деталей</h3>
               <p>
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -70,6 +83,11 @@
               </p>
             </li>
             <li class="item">
+              <div class="thumb">
+                <svg class="thumb-icon">
+                  <use href="./images/icons.svg#clock"></use>
+                </svg>
+              </div>
               <h3 class="title">Пунктуальність</h3>
               <p>
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -77,12 +95,22 @@
               </p>
             </li>
             <li class="item">
+              <div class="thumb">
+                <svg class="thumb-icon">
+                  <use href="./images/icons.svg#diagram"></use>
+                </svg>
+              </div>
               <h3 class="title">Планування</h3>
               <p>
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="item">
+              <div class="thumb">
+                <svg class="thumb-icon">
+                  <use href="./images/icons.svg#astronaut"></use>
+                </svg>
+              </div>
               <h3 class="title">Сучасні технології</h3>
               <p>
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -125,12 +153,37 @@
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
+          <ul class="card list">
             <li class="item">
               <img src="images/team_1.jpg" alt="Ігор Дем'яненко" width="270" />
               <div class="team-text">
                 <h3 class="team-title">Ігор Дем'яненко</h3>
                 <p class="team-item">Product Designer</p>
+                <div class="network-items">
+                  <a href="" class="network">
+                    <svg class="network-icon">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+
+                  <a href="" class="network">
+                    <svg class="network-icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+
+                  <a href="" class="network">
+                    <svg class="network-icon">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+
+                  <a href="" class="network">
+                    <svg class="network-icon">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </li>
             <li class="item">
@@ -153,6 +206,56 @@
                 <h3 class="team-title">Михайло Єрмаков</h3>
                 <p class="team-item">UI Designer</p>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- постійні клієнти -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Постійні клієнти</h2>
+          <ul class="list client-list">
+            <li class="item-color">
+              <a href="" class="client-item"
+                ><svg class="client-icon" width="41" height="47">
+                  <use href="./images/icons.svg#client-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-color">
+              <a href="" class="client-item">
+                <svg class="client-icon" width="42" height="52">
+                  <use href="./images/icons.svg#client-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-color">
+              <a href="" class="client-item">
+                <svg class="client-icon" width="43" height="41">
+                  <use href="./images/icons.svg#client-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-color">
+              <a href="" class="client-item">
+                <svg class="client-icon" width="84" height="41">
+                  <use href="./images/icons.svg#client-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-color">
+              <a href="" class="client-item">
+                <svg class="client-icon" width="63" height="45">
+                  <use href="./images/icons.svg#client-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item-color">
+              <a href="" class="client-item">
+                <svg class="client-icon" width="94" height="44">
+                  <use href="./images/icons.svg#client-6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
