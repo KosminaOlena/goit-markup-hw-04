@@ -394,7 +394,7 @@ img {
     color: var(--opacity-color);
 }
 
-.footer-title {
+.footer-invite {
     margin-bottom: 20px;
     font-family: 'Roboto';
     font-style: normal;
@@ -408,18 +408,11 @@ img {
 
 .footer-box {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-premier {
     margin-right: 70px;
-}
-
-.footer-secondary {
-    margin-top: 12px;
-}
-
-.footer-secondary {
-    width: 206px;
 }
 
 .social-icon {
